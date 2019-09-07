@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <style>
+                fieldset{
+                    background-color: #f1f1f1;
+                    border: none;
+                    border-radius: 2px;
+                    margin-bottom: 12px;
+                    overflow: hidden;
+                    padding: 0 .625em;
+                }
+        
+                label{
+                    cursor: pointer;
+                    display: inline-block;
+                    padding: 3px 6px;
+                    text-align: right;
+                    width: 150px;
+                    vertical-align: top;
+                }
+        
+                input{
+                    font-size: inherit;
+                }
+            </style>
+    
+    </head>
+    <body>
+        <form action="/someaction" method="post" enctype="multipart/form-data">
+            <p>
+            username:&nbsp<input type="text" />
+            </p>
+            <p>
+            password:&nbsp<input type ="password" />
+            </p>
+            <p>
+            sex:<input type="radio" name="sex" value="0"> 男 <input type="radio" name="sex" value="1">女
+            </p>
+            <p>
+            skill:<input type="checkbox" />HTML <input type="checkbox" />CSS <input type="checkbox" />JavaScript 
+            </p>
+            <p>
+                <input type="hidden" />
+            </p>
+            <p>
+                city &nbsp<select>
+                <option></option>
+                <option>北京</option>
+                <option>上海</option>
+                <option>深圳</option>
+                </select>
+            </p>
+            <p>
+                自我介绍：<textarea></textarea>
+            </p>
+            <p>
+                <input type="submit" />
+                <input type="reset" />
+            </p>            
+
+        </form>
+    </body>
+</html>
